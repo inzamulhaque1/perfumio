@@ -209,3 +209,300 @@ p {
     font-size: 0.9rem;
   }
 }
+
+/* ! Flower Essence Specialist */
+
+/* Custom styles for the Flower Your Bliss section */
+.display-5 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.card-overlay {
+  position: relative;
+  overflow: hidden;
+  height: 400px; /* Fixed height to match the image aspect ratio */
+}
+
+.card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.card-body {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: azure;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: white; /* Set card text color to white */
+}
+
+.btn-link {
+  font-size: 1rem;
+  padding: 0;
+}
+
+.btn-outline-dark {
+  border-radius: 0;
+  border-width: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: white;
+}
+
+.card-overlay:hover .card-bg {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.essence-Specialist-border {
+  border-top: 2px solid #ff6f91;
+  border-left: 2px solid #ff6f91;
+  border-right: 7px solid #ff6f91;
+  border-bottom: 7px solid #ff6f91;
+}
+
+@media (max-width: 767px) {
+  .display-5 {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .card-overlay {
+    height: 300px; /* Adjusted height for mobile */
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+/*! Testimonial */
+
+/* Custom styles for Clients Voice section */
+.profilesection{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 25px;
+}
+.profilesection-child{
+  display: flex;
+}
+.clients-voice-section {
+  
+  padding: 3rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.text-muted {
+  font-size: 1rem;
+  color: #777;
+}
+
+.clients-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-btn.prev {
+  background: #000;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+  left: 0;
+}
+
+.carousel-btn.next {
+  background: #000;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+  right: 0;
+}
+
+.carousel-btn:hover {
+  color: #ff6f91;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  height: 350px; /
+}
+
+.testimonial-card {
+  flex: 0 0 25%; /* Smaller width for non-active cards */
+  background-color: #fff5f0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0.5;
+  filter: blur(2px);
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+}
+
+.testimonial-card.active {
+  flex: 0 0 40%; /* Larger width for active card */
+  width: 40%;
+  opacity: 1;
+  filter: none;
+  position: relative;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonial-card.prev {
+  left: 5%;
+  z-index: 4;
+}
+
+.testimonial-card.next {
+  left: 55%;
+  z-index: 4;
+}
+
+.rating {
+  font-size: 1.2rem;
+  color: #FF5700;
+  margin-bottom: 0.5rem;
+  background-color: #5353531A;
+  height: 30px;
+  padding: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 25px;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .text-muted {
+    font-size: 0.9rem;
+  }
+
+  .carousel-inner {
+    height: 300px;
+  }
+
+  .testimonial-card {
+    flex: 0 0 80%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .testimonial-card.active {
+    flex: 0 0 90%;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .testimonial-card.prev, .testimonial-card.next {
+    display: none; /* Hide adjacent cards on mobile */
+  }
+}
