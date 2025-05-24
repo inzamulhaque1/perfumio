@@ -1,5 +1,10 @@
 /* ! BANNER */
 
+.font-serif {
+  font-family: "Ancizar Serif", serif;
+  font-optical-sizing: auto;
+}
+
 .rounded-bottom-corners {
   border-bottom-right-radius: 3.6rem !important;
   border-bottom-left-radius: 1rem !important;
@@ -31,7 +36,7 @@
 
 }
 
-.banner-image > * {
+.banner-image>* {
   position: relative;
   z-index: 2;
 }
@@ -66,7 +71,6 @@
 
 /* ! FLower Essence */
 
-/* Custom styles for the Flower Essence section */
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -111,7 +115,6 @@ p {
 }
 
 /* ! Perfume */
-/* Custom styles for the Flower Your Bliss section */
 .display-5 {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -125,7 +128,7 @@ p {
 .card-overlay {
   position: relative;
   overflow: hidden;
-  height: 400px; /* Fixed height to match the image aspect ratio */
+  height: 400px;
 }
 
 .card-bg {
@@ -160,7 +163,7 @@ p {
   font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 1rem;
-  color: white; /* Set card text color to white */
+  color: white;
 }
 
 .btn-link {
@@ -194,7 +197,7 @@ p {
   }
 
   .card-overlay {
-    height: 300px; /* Adjusted height for mobile */
+    height: 300px;
   }
 
   .card-body {
@@ -212,7 +215,6 @@ p {
 
 /* ! Flower Essence Specialist */
 
-/* Custom styles for the Flower Your Bliss section */
 .display-5 {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -226,7 +228,7 @@ p {
 .card-overlay {
   position: relative;
   overflow: hidden;
-  height: 400px; /* Fixed height to match the image aspect ratio */
+  height: 400px;
 }
 
 .card-bg {
@@ -261,7 +263,7 @@ p {
   font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 1rem;
-  color: white; /* Set card text color to white */
+  color: white;
 }
 
 .btn-link {
@@ -302,7 +304,7 @@ p {
   }
 
   .card-overlay {
-    height: 300px; /* Adjusted height for mobile */
+    height: 300px;
   }
 
   .card-body {
@@ -320,18 +322,19 @@ p {
 
 /*! Testimonial */
 
-/* Custom styles for Clients Voice section */
-.profilesection{
+.profilesection {
   display: flex;
   justify-content: space-between;
   text-align: left;
   padding: 25px;
 }
-.profilesection-child{
+
+.profilesection-child {
   display: flex;
 }
+
 .clients-voice-section {
-  
+
   padding: 3rem 0;
 }
 
@@ -396,11 +399,11 @@ h2 {
   width: 100%;
   max-width: 1200px;
   position: relative;
-  height: 350px; /
+  height: 350px;/
 }
 
 .testimonial-card {
-  flex: 0 0 25%; /* Smaller width for non-active cards */
+  flex: 0 0 25%;
   background-color: #fff5f0;
   padding: 1.5rem;
   border-radius: 10px;
@@ -417,7 +420,7 @@ h2 {
 }
 
 .testimonial-card.active {
-  flex: 0 0 40%; /* Larger width for active card */
+  flex: 0 0 40%;
   width: 40%;
   opacity: 1;
   filter: none;
@@ -502,7 +505,200 @@ h2 {
     transform: translateX(-50%);
   }
 
-  .testimonial-card.prev, .testimonial-card.next {
-    display: none; /* Hide adjacent cards on mobile */
+  .testimonial-card.prev,
+  .testimonial-card.next {
+    display: none;
   }
+}
+
+
+/* ! CTA */
+
+.quote-section {
+  background-image: url('../assests/bg/romantic.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  position: relative;
+}
+
+.quote-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(253, 241, 237, 0.7);
+  z-index: 1;
+}
+
+.quote-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.quote-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .quote-text {
+    font-size: 1.2rem;
+  }
+
+  .quote-section {
+    min-height: 300px;
+  }
+}
+
+/* ! Footer */
+
+
+.footer-section {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-logo {
+    display: inline-block;
+    color: white;
+    border-radius: 25px;
+
+}
+
+.flower-text, .bliss-text {
+    font-weight: 400;
+}
+
+.heart-icon {
+    margin: 0 8px;
+    font-size: 16px;
+}
+
+.footer-description {
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.social-icon.facebook {
+    background-color: #ff6b9d;
+    color: white;  
+}
+
+.social-icon.twitter {
+    background-color: #ff6b9d;
+    color: white;
+}
+
+.social-icon.instagram {
+    background-color: #ff6b9d;
+    color: white;
+}
+
+.social-icon.linkedin {
+    background-color: #ff6b9d;
+    color: white;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links {
+    color: #6c757d;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-link {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ff6b9d;
+    text-decoration: none;
+}
+
+.separator {
+    color: #dee2e6;
+    margin: 0 5px;
+}
+
+.copyright {
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .footer-description br {
+        display: none;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .separator {
+        display: none;
+    }
+    
+    .social-icons {
+        gap: 12px;
+    }
+    
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    
+    .footer-description {
+        font-size: 13px;
+        padding: 0 15px;
+    }
 }
