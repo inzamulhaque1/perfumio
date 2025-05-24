@@ -9,12 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //! Testimonial
 
-// JavaScript for carousel navigation
 document.addEventListener("DOMContentLoaded", () => {
   const testimonials = document.querySelectorAll(".testimonial-card");
   const prevBtn = document.querySelector(".prev");
   const nextBtn = document.querySelector(".next");
-  let currentIndex = 2; // Start with the third card (Miles Dawson) as active to match the image
+  let currentIndex = 2; 
 
   function updateCarousel() {
     testimonials.forEach((card, index) => {
@@ -38,7 +37,5 @@ document.addEventListener("DOMContentLoaded", () => {
     currentIndex = (currentIndex + 1) % testimonials.length;
     updateCarousel();
   });
-
-  // Initialize carousel
   updateCarousel();
 });
